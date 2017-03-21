@@ -32,17 +32,17 @@ Stack.prototype= {
 //栈的检测
 
 var stack=new Stack();
-console.log(stack.isEmpty());
+console.log(stack.isEmpty());  //true
 stack.push('yanyan');
 stack.push('li');
-console.log(stack.peek());
+console.log(stack.peek()); //li
 stack.push('love');
 stack.pop();
-console.log(stack.size());
-console.log(stack.print());
+console.log(stack.size()); //2
+console.log(stack.print()); //yanyan，li
 stack.pop();
-console.log(stack.size());
-console.log(stack.peek());
+console.log(stack.size()); //1
+console.log(stack.peek()); //yanyan
 stack.clear();
 
 //栈的应用  对正整数的二进制转换
@@ -61,8 +61,8 @@ function toBinary(num){
     }
     return numStr;
 }
-console.log(toBinary(2));
-console.log(toBinary(10));
+console.log(toBinary(2)); //10
+console.log(toBinary(10)); //1010
 
 //拓展 对正整数的十六进制转换
 
@@ -87,8 +87,8 @@ function toHexadecimal(num){
     }
     return numStr;
 }
-console.log(toHexadecimal(15));
-console.log(toHexadecimal(255));
+console.log(toHexadecimal(15)); //F
+console.log(toHexadecimal(255));//FF
 
 //二次拓展  对正整数的进制转换
 function toHex(num,hex){
@@ -112,5 +112,5 @@ function toHex(num,hex){
     }
     return numStr;
 }
-console.log(toHex(255, 2));
-console.log(toHex(255, 16));
+console.log(toHex(255, 2)); //11111111
+console.log(toHex(255, 16)); //FF
