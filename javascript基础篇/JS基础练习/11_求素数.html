@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>求2-200间的素数</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    var flag = true;
+    for(var i=2; i<=200; i++) {
+        for(var j=2; j<i; j++) {
+            if(i%j == 0) {
+                flag = false;
+                break;
+            }
+        }
+        if(flag) {
+            document.write('素数为:' + i + '<br />');
+        }
+        flag = true;
+    }
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

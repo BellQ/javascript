@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>求数列第20项的和</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    function slh(num) {
+        if(num == 1) {
+            return 1;
+        }
+        if(num > 1) {
+            return nu = 2 * slh(num - 1);
+        } else {
+            document.write('请输入一个大于零的数字');
+        }
+    }
+    var num = 6;
+    var s = slh(num);
+    document.write('第' + num + '项的值是：' + s);
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

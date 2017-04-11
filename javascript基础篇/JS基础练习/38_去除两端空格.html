@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>去除两端空格</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    var str = '   ab  cd            ';
+ 
+    //去掉左边的空白  
+    function trimLeft(s){  
+        if(s == null) {  
+            return "";  
+        }  
+        var whitespace = new String(" \t\n\r");
+        var str = new String(s);
+        if (whitespace.indexOf(str.charAt(0)) != -1) {
+            var j=0, i = str.length;
+            while (j < i && whitespace.indexOf(str.charAt(j)) != -1){
+                j++;
+            }
+            str = str.substring(j, i);
+        }  
+        return str;
+    }
+    alert(trimLeft(str));
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

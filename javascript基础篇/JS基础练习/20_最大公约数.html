@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>最大公约数</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    function gys(num1,num2) {
+        var temp;
+        var s = 0;
+        if(num1>num2) {
+            temp = num1;
+            num1 = num2;
+            num2 = temp;
+        }
+        if(num1 == num2) {
+            s = num1;
+            document.write(num1 + '和' + num2 + '的最大公约数为：' + s);
+            return;
+        }
+        for(var i=1; i<=num1; i++) {
+            if(num1%i == 0 && num2%i == 0) {
+                s = i;
+            }
+        }
+        document.write(num1 + '和' + num2 + '的最大公约数为：' + s);
+    }
+    gys(6,12);
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

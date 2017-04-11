@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>新网页标题</title>
+	<meta name="keywords" content="关键字列表" />
+	<meta name="description" content="网页描述" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<style type="text/css"></style>
+	<script type="text/javascript">
+		
+		var YouWin = 0;
+
+		function result(You)
+		{
+			var Pc  = Pc_result(); //获取电脑的选择
+
+			if(You == Pc)
+			{
+				alert("没有输赢,你们出的都是" + Pc);
+			}
+
+			else if(You == "剪刀" && Pc == "石头")
+			{
+				alert("你输了,电脑出的是" + Pc);
+			}
+			else if(You == "布布" && Pc == "石头")
+			{
+				alert("你赢了,电脑出的是" + Pc);
+				YouWin++;
+			}
+
+
+			else if(You == "布布" && Pc == "剪刀")
+			{
+				alert("你输了,电脑出的是" + Pc);
+			}
+			else if(You == "石头" && Pc == "剪刀")
+			{
+				alert("你赢了,电脑出的是" + Pc);
+				YouWin++;
+			}
+
+
+			else if(You == "石头" && Pc == "布布")
+			{
+				alert("你输了,电脑出的是" + Pc);
+			}
+			else if(You == "剪刀" && Pc == "布布")
+			{
+				alert("你赢了,电脑出的是" + Pc);
+				YouWin++;
+			}			
+			document.getElementById("YouWin_text").value = YouWin;
+		}
+
+		// 随机电脑出的选择
+		function Pc_result()
+		{
+			
+			v1 = Math.random()*3;
+			v1 = Math.round(v1)+1;
+
+			if(v1 == 1)
+			{
+				return "石头";
+			}
+
+			else if(v1 == 2)
+			{
+				return "剪刀";
+			}
+
+			else if(v1 == 3)
+			{
+				return "布布";
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	<hr>
+	<input type="button" value="石头" onclick="result('石头')">
+	<input type="button" value="剪刀" onclick="result('剪刀')">
+	<input type="button" value="布布" onclick="result('布布')">
+	<hr>
+	<span>你赢的次数:</span>
+	<input type="text" id="YouWin_text">
+	<span>电脑赢的次数:</span>
+	<input type="text" id="PcWin">
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>1-100的平方和</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    var s1 = 0;
+    for(var i=1; i<=100; i++) {
+        s1 = s1 + i*i;
+    }
+    document.write('第一种方法：<br />');
+    document.write('1-100的平方和为:' + s1);
+
+    var s2 = 0;
+    var i = 1;
+    while(i <= 100) {
+        s2 = s2 + i*i;
+        i++;
+    }
+    document.write('<br />第二种方法：<br />');
+    document.write('1-100的平方和为:' + s2);
+
+    var s3 = 0;
+    var i = 1;
+    do {
+        s3 = s3 + i*i;
+        i++;
+    } while(i<=100);
+    document.write('<br />第三种方法：<br />');
+    document.write('1-100的平方和为:' + s3);
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

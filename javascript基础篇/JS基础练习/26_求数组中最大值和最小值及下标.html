@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>求数组最大值、最小值和下标</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    var arr = ['34','23','53','19','32','27','15','42'];
+    var max;
+    var min;
+    max = arr[0];
+    min = arr[0];
+    for(var i=1; i<arr.length; i++) {
+        if(arr[i] > max) {
+            max = arr[i];
+            n1 = i;
+        }
+        if(arr[i] < min) {
+            min = arr[i];
+            n2 = i;
+        }
+    }
+    document.write('最大值为：' + max + ' 其下标为：' + n1 + '<br />');
+    document.write('最小值为：' + min + ' 其下标为：' + n2);
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

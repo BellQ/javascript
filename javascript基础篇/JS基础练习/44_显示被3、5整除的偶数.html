@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>被3、5整除的偶数</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    function getNum(n) {
+        var cont = 0;
+        for(var i=1; i<=n; i++) {
+            if(i % 3 == 0 && i % 5 == 0 && i % 2 == 0) {
+                cont++;
+                document.write(i + '&nbsp;');
+                if(cont % 6 == 0) {
+                    document.write('<br />');
+                }
+            }
+        }
+    }
+    getNum(500);
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

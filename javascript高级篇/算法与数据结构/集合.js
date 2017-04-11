@@ -78,17 +78,17 @@ Set.prototype={
 };
 
 //基本使用
-var set = new Set();
-set.add('li');
-console.log(set.values());
-console.log(set.has('love'));
-console.log(set.size());
-set.add('BellQ');
-console.log(set.values());
-console.log(set.has('li'));
-console.log(set.size());
-set.remove('li');
-console.log(set.values());
+//var set = new Set();
+//set.add('li');
+//console.log(set.values());
+//console.log(set.has('love'));
+//console.log(set.size());
+//set.add('BellQ');
+//console.log(set.values());
+//console.log(set.has('li'));
+//console.log(set.size());
+//set.remove('li');
+//console.log(set.values());
 
 //集合的运算
 var setA=new Set();
@@ -96,7 +96,7 @@ setA.add('li');setA.add('yan');setA.add('ca');setA.add('bellQ');setA.add('code')
 var setB=new Set();
 setB.add('li');setB.add(2);setB.add(4);setB.add(1);setB.add('BellQ');setB.add('ha');setB.add('yun');setB.add('data');
 
-console.log(setA.union(setB));
-console.log(setA.intersection(setB));
+//console.log(setA.union(setB));
+//console.log(setA.intersection(setB));
 console.log(setA.difference(setB));
-console.log(setA.subset(setB));
+//console.log(setA.subset(setB));

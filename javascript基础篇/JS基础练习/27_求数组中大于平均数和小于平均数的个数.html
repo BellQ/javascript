@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>求数组中大于平均数的个数和小于平均数的个数</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    var arr = ['34','43','25','37','16','31','27'];
+    var avg;
+    var s = 0;
+    var n1 = 0;
+    var n2 = 0;
+    for(var i=0; i<arr.length; i++) {
+        s += parseInt(arr[i]);
+    }
+    avg = s/arr.length;
+    for(var i=0; i<arr.length; i++) {
+        if(arr[i] > avg) {
+            n1++;
+        }
+        if(arr[i] < avg) {
+            n2++;
+        }
+    }
+    document.write('大于平均数的个数为:' + n1 + '个<br />');
+    document.write('小于平均数的个数为:' + n2 + '个');
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>分支结构</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    // if 实现
+    var score = 100;
+    if(score >= 90) {
+        document.write('优秀');
+    } else if(score >= 80) {
+        document.write('良好');
+    } else if(score >= 70) {
+        document.write('中等');
+    } else if(score >=60) {
+        document.write('及格');
+    } else {
+        document.write('不及格');
+    }
+    document.write('<br />下面是switch实现：' + '<br />');
+    // switch 实现
+    switch (true) {
+        case score >= 90:
+        document.write('优秀');
+        break;
+        case score >= 80:
+        document.write('良好');
+        break;
+        case score >= 70:
+        document.write('中等');
+        break;
+        case score >= 60:
+        document.write('及格');
+        break;
+        default:
+        document.write('不及格');
+    }
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

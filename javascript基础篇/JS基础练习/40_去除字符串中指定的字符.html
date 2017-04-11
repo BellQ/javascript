@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>去除字符串中指定的字符</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    var str = '24292382028424';
+    // 去除字符中的 字符 2
+    var arr = str.split('');
+    for(var i=0; i<arr.length; i++) {
+        if(arr[i] == '2') {
+            arr.splice(i,1);
+        }
+    }
+    str = arr.join('');
+    alert(str);
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

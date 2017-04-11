@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>打印标题</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+
+    /*要求：网页一打开，要求依次弹出数字1-6，并且每弹出一次，
+    页面就显示出对应的一个标题行（即从h1-h6）。注意，页面中不
+    应该出现h1-h6的标签，而应该是由js写出来的*/
+
+    for(var i=1; i<=6; i++) {
+        alert(i);
+        document.write('<h' + i + '>' + i + '</h' + i + '><br />');
+    }
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>模拟录入信息</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    var arr = ['刘备','关羽','张飞','赵云','孙权','诸葛亮','周瑜'];
+    var na = window.prompt('请输入一个姓名');
+    //alert(name);
+    for(var i=0; i<arr.length; i++) {
+        if(na == arr[i]) {
+            alert('此姓名已存在，请重输!');
+            na = '';
+        }
+    }
+    arr[arr.length] = na;
+    alert(arr);
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

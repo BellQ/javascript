@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>求数组中奇数的个数及平均值</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    var arr = ['34','43','25','37','16','31','27'];
+    var n = 0;
+    var s = 0;
+    var avg = 0;
+    for(var i=0; i<arr.length; i++) {
+        if(arr[i]%2 != 0) {
+            n++;
+            s += parseInt(arr[i]);
+        }
+    }
+    avg = s/n;
+    document.write('数组中奇数的个数为：' + n + "个<br />");
+    document.write('数组中奇数的平均数为：' + avg);
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

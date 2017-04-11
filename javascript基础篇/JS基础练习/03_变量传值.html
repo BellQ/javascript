@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>变量传值</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    /**** 赋值传值 ****/
+    var v1 = 'abc';
+    var v2 = v1;
+    v2 = '123' + v2;
+    alert(v2); // 结果为 123abc
+    alert(v1); // 结果为 abc
+
+
+    /**** 引用传值 ****/
+    var obj1 = {name:'张三',age:22};
+    var obj2 = obj1;
+
+    alert(obj2.age); // 结果为 22
+
+    obj2.age = 23;
+    alert(obj1.age) // 结果为 23
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

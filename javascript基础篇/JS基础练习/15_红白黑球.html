@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>红白黑球</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    for(var black=1; black<28; black++) {
+        for(var white=1; white<25; white++) {
+            for(var red=1; red<28; red++) {
+                if(black + red == 28 && red + white == 25 && white + black == 31) {
+                    document.write('黑球共有：' + black + '<br />' + '白球共有：' + white + '<br />' + '红球共有：' + red);
+                }
+            }
+        }
+    }
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

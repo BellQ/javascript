@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>递归求数列第20项的值</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    function sl(num) {
+        if(num <= 0) {
+            document.write('请输入一个大于零的数字');
+            return;
+        }
+        if(num == 1) {
+            return 1;
+        }
+        if(num == 2) {
+            return 2;
+        }
+        if(num%2 == 0) {
+            return nu = sl(num - 1) + sl(num - 2) + sl(num - 3);
+        } else {
+            return nu = sl(num - 1) + sl(num - 2);
+        }
+    }
+    var n = 20;
+    var s = sl(n);
+    document.write('第' + n + '项是:' + s);
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

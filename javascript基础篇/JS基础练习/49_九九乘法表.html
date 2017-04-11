@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>九九乘法表</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    document.write('<table>');
+    for(var i=1; i<=9; i++) {
+        document.write('<tr bgcolor="#09ACF7" cellpadding="1">');
+        for(var j=1; j<=i; j++) {
+            document.write('<td width="60" align="center">');
+            document.write(i + '*' + j + '=' + i * j);
+            document.write('</td>');
+        }
+        document.write('</tr>');
+    }
+    document.write('</table>');
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>
